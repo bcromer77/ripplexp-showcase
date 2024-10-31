@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Page configuration (must be the first Streamlit command)
+# Page configuration
 st.set_page_config(page_title="RippleXp Product Suite", layout="wide")
 
 # Custom CSS for a Johnny Ive-inspired minimalist design
@@ -53,7 +53,7 @@ st.markdown("""
 st.title("✨ Experience the RippleXp Suite")
 st.subheader("Master storytelling, guard your reputation, and track trends—all in one place.")
 
-# Create a Grid Layout
+# Create a Grid Layout for existing products
 col1, col2 = st.columns(2)
 
 # Column 1: Storytelling Courses
@@ -72,7 +72,7 @@ with col2:
     st.button("Search Now", key="torch")
     st.markdown('</div>', unsafe_allow_html=True)
 
-# New Row for Additional Products
+# New Row for additional products
 col3, col4 = st.columns(2)
 
 # Column 3: Mentions Monitoring
@@ -89,4 +89,23 @@ with col4:
     st.markdown('<div class="product-title">TR | Trends Analysis 📈</div>', unsafe_allow_html=True)
     st.markdown('<div class="product-description">Stay ahead of the curve with insights into the latest trends shaping your industry. Discover what’s buzzing and why it matters.</div>', unsafe_allow_html=True)
     st.button("Explore Trends", key="trends")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# New Row for influencer-related products
+col5, col6 = st.columns(2)
+
+# Column 5: Vetting Influencers
+with col5:
+    st.markdown('<div class="product-card">', unsafe_allow_html=True)
+    st.markdown('<div class="product-title">IN | Influencer Navigator 🌟</div>', unsafe_allow_html=True)
+    st.markdown('<div class="product-description">Guide your brand to the right influencers with comprehensive vetting tools to ensure perfect alignment.</div>', unsafe_allow_html=True)
+    st.button("Navigate Now", key="influencer_navigator")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# Column 6: Compliance Verification
+with col6:
+    st.markdown('<div class="product-card">', unsafe_allow_html=True)
+    st.markdown('<div class="product-title">CT | Compliance Torch 🔦</div>', unsafe_allow_html=True)
+    st.markdown('<div class="product-description">Verify that influencers have completed essential compliance and brand safety training to protect your reputation.</div>', unsafe_allow_html=True)
+    st.button("Verify Now", key="compliance_torch")
     st.markdown('</div>', unsafe_allow_html=True)

@@ -1,5 +1,8 @@
 import streamlit as st
 
+# Page configuration (must be the first Streamlit command)
+st.set_page_config(page_title="RippleXp Product Suite", layout="wide")
+
 # Custom CSS for a Johnny Ive-inspired minimalist design
 st.markdown("""
     <style>
@@ -45,9 +48,6 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-
-# Page configuration
-st.set_page_config(page_title="RippleXp Product Suite", layout="wide")
 
 # Hero Section
 st.title("✨ Experience the RippleXp Suite")

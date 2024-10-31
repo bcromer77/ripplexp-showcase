@@ -99,13 +99,25 @@ with col5:
     st.markdown('<div class="product-card">', unsafe_allow_html=True)
     st.markdown('<div class="product-title">IN | Influencer Navigator 🌟</div>', unsafe_allow_html=True)
     st.markdown('<div class="product-description">Guide your brand to the right influencers with comprehensive vetting tools to ensure perfect alignment.</div>', unsafe_allow_html=True)
-    st.button("Navigate Now", key="influencer_navigator")
-    st.markdown('</div>', unsafe_allow_html=True)
+    if st.button("Navigate Now", key="influencer_navigator"):
+        with st.expander("Learn More about Influencer Vetting"):
+            st.write("""
+            **IN | Influencer Navigator**: Helping brands make informed choices about influencers.
+            - **IM | Influencer Match**: Matches you with vetted influencers who align with your brand.
+            - **VF | Vibe Filter**: A modern tool to filter influencers based on their values and content style.
+            """)
 
 # Column 6: Compliance Verification
 with col6:
     st.markdown('<div class="product-card">', unsafe_allow_html=True)
     st.markdown('<div class="product-title">CT | Compliance Torch 🔦</div>', unsafe_allow_html=True)
     st.markdown('<div class="product-description">Verify that influencers have completed essential compliance and brand safety training to protect your reputation.</div>', unsafe_allow_html=True)
-    st.button("Verify Now", key="compliance_torch")
-    st.markdown('</div>', unsafe_allow_html=True)
+    if st.button("Verify Now", key="compliance_torch"):
+        with st.expander("Learn More about Compliance Verification"):
+            st.write("""
+            **CT | Compliance Torch**: Ensuring influencer compliance and brand safety.
+            - **IS | Integrity Shield**: Protects your brand by verifying influencer integrity and training completion.
+            - **BP | BrandProof**: Certifies that influencers are brand-safe and meet all compliance standards.
+            """)
+
+st.markdown('</div>', unsafe_allow_html=True)
